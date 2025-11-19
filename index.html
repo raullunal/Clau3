@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Claudia Aguirre — Especialista en E-Learning</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="navbar container">
+      <div class="brand" id="brandBtn" aria-label="Inicio" role="button" tabindex="0">
+        <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="44"/></svg>
+        <span class="brand-text">Claudia Aguirre</span>
+      </div>
+
+      <ul class="nav-links" role="menubar">
+        <li role="none"><a role="menuitem" href="#servicios">Servicios</a></li>
+        <li role="none"><a role="menuitem" href="#impacto">Impacto</a></li>
+        <li role="none"><a role="menuitem" href="#proyectos">Proyectos</a></li>
+        <li role="none"><a role="menuitem" href="#contacto">Contacto</a></li>
+      </ul>
+
+      <div class="controls">
+        <button id="toggleDark" class="icon-btn" aria-pressed="false" title="Cambiar tema">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="hero">
+      <div class="hero-left">
+        <h1 class="reveal title">
+          Especialista en <span class="accent">E-Learning</span><br />
+          y Gestión de Proyectos Educativos
+        </h1>
+        <p class="reveal subtitle">
+          +20 años diseñando experiencias de aprendizaje digital, optimizando resultados y formando equipos internos.
+        </p>
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary" href="#contacto">Solicitar consultoría</a>
+          <a class="btn btn-ghost" href="#proyectos">Ver proyectos</a>
+        </div>
+
+        <ul class="kpis reveal kpi-list" aria-hidden="true">
+          <li><strong>+300k</strong><span>destinatarios</span></li>
+          <li><strong>+200</strong><span>expertos coordinados</span></li>
+          <li><strong>+80%</strong><span>finalización (pagos)</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-right">
+        <div class="card hero-card floating">
+          <h3>Diseño instruccional estratégico</h3>
+          <p>Mapas de contenido, micro-aprendizajes, evaluaciones y simulaciones interactivas.</p>
+          <div class="tag">E-learning • Microlearning • Evaluación</div>
+        </div>
+
+        <div class="card stats-card floating delay-1">
+          <h4>Implementación & gestión</h4>
+          <p>Puesta en marcha de plataformas, formación de equipos y seguimiento de KPIs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="services container">
+      <h2 class="section-title reveal">Servicios</h2>
+      <div class="grid reveal-grid">
+        <article class="service-card">
+          <h3>Diagnóstico estratégico</h3>
+          <p>Alineación de la capacitación con objetivos de negocio y diseño de roadmap formativo.</p>
+        </article>
+
+        <article class="service-card">
+          <h3>Gestión integral de proyectos</h3>
+          <p>Coordinación de equipos multidisciplinarios y entregables con metodologías ágiles.</p>
+        </article>
+
+        <article class="service-card">
+          <h3>Microaprendizajes</h3>
+          <p>Diseño de píldoras autogestionadas con foco en engagement y retención.</p>
+        </article>
+
+        <article class="service-card">
+          <h3>Análisis y evaluación</h3>
+          <p>Dashboards, medición de impacto y mejora continua iterativa.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="impacto" class="impact container">
+      <h2 class="section-title reveal">Resultados & alcance</h2>
+      <div class="impact-grid reveal-grid">
+        <figure class="impact-card">
+          <figcaption><strong>+300.000</strong></figcaption>
+          <p>Destinatarios en diversos sectores (salud, educación, empresas).</p>
+        </figure>
+
+        <figure class="impact-card">
+          <figcaption><strong>+50</strong></figcaption>
+          <p>Microaprendizajes diseñados con +50% tasa de finalización.</p>
+        </figure>
+
+        <figure class="impact-card">
+          <figcaption><strong>+200</strong></figcaption>
+          <p>Expertos y colaboradores coordinados en proyectos nacionales.</p>
+        </figure>
+      </div>
+    </section>
+
+    <section id="proyectos" class="projects container">
+      <h2 class="section-title reveal">Algunos clientes y proyectos</h2>
+      <ul class="logo-list reveal-grid" aria-hidden="true">
+        <li>educ.ar</li>
+        <li>Hospital Bonaparte</li>
+        <li>Fundartox</li>
+        <li>Sanatorio Mater Dei</li>
+        <li>Finneg</li>
+      </ul>
+    </section>
+
+    <section id="contacto" class="contact container">
+      <h2 class="section-title reveal">Contacto</h2>
+      <div class="contact-grid reveal-grid">
+        <div class="contact-info">
+          <p>Si buscas optimizar la formación en tu organización con soluciones digitales personalizadas, escribime:</p>
+          <ul>
+            <li><strong>Email:</strong> azud15m@gmail.com</li>
+            <li><strong>Tel:</strong> +54 9 11 64932075</li>
+          </ul>
+        </div>
+
+        <form id="contactForm" class="contact-form" action="https://formspree.io/f/xxxxxxxx" method="POST" novalidate>
+          <div class="input-row">
+            <input name="nombre" type="text" placeholder="Nombre" required />
+            <input name="email" type="email" placeholder="Email" required />
+          </div>
+          <textarea name="mensaje" rows="6" placeholder="Tu mensaje" required></textarea>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary send">
+              <span class="btn-text">Enviar mensaje</span>
+              <span class="loader" aria-hidden="true"></span>
+            </button>
+            <div id="formMsg" class="form-msg" role="status" aria-live="polite"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Claudia Aguirre — Especialista en E-Learning</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

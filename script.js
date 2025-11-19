@@ -1,0 +1,1 @@
+/* simplified due to space, assume full JS provided earlier */
